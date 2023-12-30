@@ -1,7 +1,9 @@
-const button= document.querySelectorAll(".button")
+const buttons= document.querySelectorAll(".button")
 const body = document.querySelector("body")
 
-document.addEventListener('click',function(e){
+buttons.forEach(function (button) {
+    console.log(button);
+button.addEventListener('click',function(e){
     console.log(e);
     console.log(e.target);
 
@@ -18,4 +20,5 @@ document.addEventListener('click',function(e){
         case 'yellow':  body.style.backgroundColor= e.target.id
         break;
     }
+});
 })
