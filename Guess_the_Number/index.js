@@ -73,6 +73,7 @@ function endGame() {
   p.innerHTML = `<h2 id="newGame">Start new Game</h2>`;
   startOver.appendChild(p);
   playGame = false;
+  alert("The game has ended!To play again click on start button");
   newGame();
 }
 
