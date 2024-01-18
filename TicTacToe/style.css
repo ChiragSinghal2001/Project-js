@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color:rgb(61, 49, 231);
+    color: aliceblue;
+    margin: 20px;
+    border-radius: 20px;
+}
+#headerstyle{
+    display: flexbox;
+    justify-content: center;
+    text-align: center;
+}
+.gameContainer{ 
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.mainbox{
+    display: grid;
+    grid-template-columns: repeat(3,10vw);
+    grid-template-rows: repeat(3,10vw);
+    background-color: aquamarine;
+}
+.singlebox{
+    border: solid;
+    border-width: thin;
+    cursor: pointer;
+}
+.singlebox:hover{
+    background-color: brown;
+}
+.boxtext{
+    font-size: 8vw;
+    display: flex;
+    justify-content: center;
+}
+img{
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+
+.bt0{
+    border-top: 0;
+}
+.bb0{
+    border-bottom: 0;
+}
+.br0{
+    border-right: 0;
+}
+.bl0{
+    border-left: 0;
+}
+
+.infobox{
+    margin: 2vw;
+}
+.line{
+    background-color: black;
+    height: 3px;
+    width: 0;
+    position: absolute;
+    background-color: #911d91;
+    transition: width 1s ease-in-out;
+}
+
+@media screen and (max-width: 950px){
+    .gameContainer{
+        flex-wrap: wrap;
+    }
+    .gameInfo{
+        margin-top: 34px;
+    }
+    .gameInfo h1{
+        font-size: 1.5rem;
+    }
+    .mainbox { 
+        grid-template-rows: repeat(3, 20vw);
+        grid-template-columns: repeat(3, 20vw);
+    }
+  }
